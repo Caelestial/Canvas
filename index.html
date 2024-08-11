@@ -114,6 +114,9 @@
                 const telegramInitData = window.Telegram.WebApp.initData;
                 const telegramInitDataUnsafe = window.Telegram.WebApp.initDataUnsafe;
                 unityInstance.SendMessage('Webhook', 'GetUserId', telegramInitData);
+                console.log('TELEGRAM DATA');
+                console.log(telegramInitData);
+                console.log(telegramInitDataUnsafe);
               }).catch((message) => {
                 alert(message);
               });
